@@ -58,23 +58,24 @@
               DOWNLOAD
                   </a>
           </div> -->
-		<ul class="header-nav">
-            <li>
-                <img src="img/burger-menu.svg" alt="logo" class="burger-menu-button" width="24" height="24">
-            </li>
-            <li><a href="#part1" class="nav-menu-blue">HOME</a></li>
-            <li><a href="#part2" class="nav-menu">ABOUT</a></li>
-            <li><a href="#part3" class="nav-menu">FEATURES</a></li>
-            <li>
-            <div class="background-logo">
-                <img src="img/Logo4.svg" alt="logo" class="logo">
-            </div>
-            </li>
-            <li><a href="#part4" class="nav-menu">SCREENSHOT</a></li>
-            <li><a href="#part5" class="nav-menu">BLOG</a></li>
-            <li><a class="down">DOWNLOAD</a></li>
+        <nav>
+            <ul class="header-nav">
+                <li>
+                    <img src="img/burger-menu.svg" alt="logo" class="burger-menu-button" width="24" height="24">
+                </li>
+                <li><a href="#part1" class="nav-menu-blue">HOME</a></li>
+                <li><a href="#part2" class="nav-menu">ABOUT</a></li>
+                <li><a href="#part3" class="nav-menu">FEATURES</a></li>
+                <li>
+                <div class="background-logo">
+                    <a href="#"><img src="img/Logo4.svg" alt="logo" class="logo"></a>
+                </div>
+                </li>
+                <li><a href="#part4" class="nav-menu">SCREENSHOT</a></li>
+                <li><a href="#part5" class="nav-menu">BLOG</a></li>
+                <li><a class="down">DOWNLOAD</a></li>
             </ul>
-
+        </nav>
     </header>
     <main>
         <section class="section-start" id="part1">
@@ -89,10 +90,10 @@
                     <h2 class="second-main-header">Download App Now</h2>
                     <div class="hero-card-images">
                         <a href="#!">
-                            <img src="img/toppng_1.svg" alt="google-play" width="108" height="34">
+                            <img src="img/google-paly-2.png" alt="google-play" width="108" height="34">
                         </a>
                         <a href="@!">
-                            <img src="img/PngItem_1144050_2.svg" alt="App Store" width="102" height="32">
+                            <img src="./img/appstore-2.png" alt="App Store" width="102" height="32">
                         </a>
                     </div>	
                 </div> 
@@ -172,7 +173,7 @@
             </div>
         </section>
             
-        <section class="advention" style="background: url(img/Background\ Image\ \(1\).png);background-size: cover;background-repeat: no-repeat;" id="part3">
+        <section class="advention" id="part3">
         
             <div class="features-apps-start">
                 <h2 class="main-header-white">APP FEATURES</h2>
@@ -251,10 +252,10 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
                         </p>
                         <a href="">
-                            <img src="img/PngItem_1144050_2.svg" alt="">
+                            <img src="img/appstore-2.png" alt="">
                         </a>
                         <a href="">
-                            <img src="img/toppng_1.svg" alt="">
+                            <img src="img/google-paly-2.png" alt="">
                         </a>
                         <ul class="ul">
                             <li class="list2">
@@ -528,7 +529,10 @@
                         to get our latest update & news</p>
                     <form class="footer_news__form" action="#" method="get">
                         <span class="form__text">enter your email</span>
-                        <input class="form__input--email" type="email" placeholder="Your email adress">
+                        
+                    <label for="input-form"><span class="label">E-mail:</span>
+                        <input class="form__input--email" type="email" id="input-form" placeholder="Your email adress">
+                    </label>
                         <button class="form__input--email-button" type="submit"><img
                                 src="img/send-plane-2-fill.svg" alt=""></button>
                     </form>
