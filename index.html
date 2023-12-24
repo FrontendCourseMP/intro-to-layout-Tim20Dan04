@@ -44,24 +44,41 @@
                 </li>
             </ul>
         </div>
-		<div class="header-nav">
-			<img src="img/burger-menu.svg" alt="logo" class="burger-menu-button" width="24" height="24">
-            <a href="#part1" class="nav-menu-blue">HOME</a>
-            <a href="#part2" class="nav-menu">ABOUT</a>
-            <a href="#part3" class="nav-menu">FEATURES</a>
+        <!-- <div class="header-nav">
+            <img src="img/burger-menu.svg" alt="logo" class="burger-menu-button" width="24" height="24">
+                  <a href="#part1" class="nav-menu-blue">HOME</a>
+                  <a href="#part2" class="nav-menu">ABOUT</a>
+                  <a href="#part3" class="nav-menu">FEATURES</a>
+                  <div class="background-logo">
+              <img src="img/Logo4.svg" alt="logo" class="logo">
+            </div>
+                  <a href="#part4" class="nav-menu">SCREENSHOT</a>
+                  <a href="#part5" class="nav-menu">BLOG</a>
+            <a class="down">
+              DOWNLOAD
+                  </a>
+          </div> -->
+		<ul class="header-nav">
+            <li>
+                <img src="img/burger-menu.svg" alt="logo" class="burger-menu-button" width="24" height="24">
+            </li>
+            <li><a href="#part1" class="nav-menu-blue">HOME</a></li>
+            <li><a href="#part2" class="nav-menu">ABOUT</a></li>
+            <li><a href="#part3" class="nav-menu">FEATURES</a></li>
+            <li>
             <div class="background-logo">
-				<img src="img/Logo4.svg" alt="logo" class="logo">
-			</div>
-            <a href="#part4" class="nav-menu">SCREENSHOT</a>
-            <a href="#part5" class="nav-menu">BLOG</a>
-			<button class="down">
-				DOWNLOAD
-			</button>
-		</div>
+                <img src="img/Logo4.svg" alt="logo" class="logo">
+            </div>
+            </li>
+            <li><a href="#part4" class="nav-menu">SCREENSHOT</a></li>
+            <li><a href="#part5" class="nav-menu">BLOG</a></li>
+            <li><a class="down">DOWNLOAD</a></li>
+            </ul>
+
     </header>
     <main>
         <section class="section-start" id="part1">
-            <div class="container1">
+            <div class="container1 container">
                 <div class="hero-card">
                     <h2 class="main-header">A GREAT APP MAKES YOUR LIFE BETTER</h2>
                     <p class="hero-p">
@@ -87,10 +104,11 @@
             
                     
         <section class="about" id="part2">
-            <div class="head">
-                <h2 class="main-header-black">ABOUT OUR APP</h2>
-                <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
-            </div>
+            <div class="container">
+                <div class="head">
+                    <h2 class="main-header-black">ABOUT OUR APP</h2>
+                    <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+                </div>
         
                 <div class="container1">
                     <img src="img/App_Design.png" alt="App Design" class="img-about">
@@ -104,8 +122,12 @@
                                     <h3 class="second-main">CREATIVE DESIGN</h3>
                                 </div>
                                 <div class="box3">
-                                    <p class="p-2">Lorem ipsum dolor sit amet, conse
-                                        ctetur adipiscing elit.</p>
+                                    <p class="about__paragraph--description-text gray-paragraph">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <p class="about__paragraph--description-text-pc gray-paragraph">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente architecto ipsa sed tempora dolore debitis possimus hic doloremque, id quia quibusdam accusamus? Quibusdam nulla quas aperiam.
+                                    </p>
                                 </div>
                             </div>
                         </li>
@@ -118,8 +140,12 @@
                                     <h3 class="second-main">EASY TO USE</h3>
                                 </div>
                                 <div class="box3">
-                                    <p class="p-2">Lorem ipsum dolor sit amet, conse
-                                        ctetur adipiscing elit.</p>
+                                    <p class="about__paragraph--description-text gray-paragraph">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <p class="about__paragraph--description-text-pc gray-paragraph">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente architecto ipsa sed tempora dolore debitis possimus hic doloremque, id quia quibusdam accusamus? Quibusdam nulla quas aperiam.
+                                    </p>
                                 </div>
                             </div>
                         </li>
@@ -132,114 +158,126 @@
                                     <h3 class="second-main">BEST USER EXPERINCE</h3>
                                 </div>
                                 <div class="box3">
-                                    <p class="p-2">Lorem ipsum dolor sit amet, conse
-                                        ctetur adipiscing elit.</p>
+                                    <p class="about__paragraph--description-text gray-paragraph">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <p class="about__paragraph--description-text-pc gray-paragraph">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente architecto ipsa sed tempora dolore debitis possimus hic doloremque, id quia quibusdam accusamus? Quibusdam nulla quas aperiam.
+                                    </p>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
+            </div>
         </section>
             
-            <section class="advention" style="background: url(img/Background\ Image\ \(1\).png);background-size: cover;background-repeat: no-repeat;" id="part3">
-                <div class="features-apps-start">
-                    <h2 class="main-header-white">APP FEATURES</h2>
-                    <p class="white-p">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Repudiandae adipisci 
-                        ex a consequatur?
-                    </p>
-                </div>
+        <section class="advention" style="background: url(img/Background\ Image\ \(1\).png);background-size: cover;background-repeat: no-repeat;" id="part3">
+        
+            <div class="features-apps-start">
+                <h2 class="main-header-white">APP FEATURES</h2>
+                <p class="white-p">
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Repudiandae adipisci 
+                    ex a consequatur?
+                </p>
+            </div>
 
-                <div class="features-apps1">
-                    <img src="img/chat.svg" alt="" class="features-pictures" width="47" height="43">
-                    <h3 class="second-main cl-white mr-30">BEST USER EXPERINCE</h3>
-                    <p class="white-p">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
-                </div>
-                <div class="app-features-wrap">
-                    <div class="features-right">
-                        <div class="features-apps-r">
-                            <img src="img/gift.svg" alt="" class="features-pictures" width="47" height="43">
-                            <h3 class="second-main cl-white mr-30">UNLIMITER FEATURES</h3>
-                            <p class="white-p">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                        <div class="features-apps-r">
-                            <img src="img/pen.svg" alt="" class="features-pictures" width="47" height="43">
-                            <h3 class="second-main cl-white mr-30">AWSOME UI DESIGN</h3>
-                            <p class="white-p">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </p>
-                        </div>
+            <div class="features-apps1">
+                <img src="img/chat.svg" alt="" class="features-pictures" width="47" height="43">
+                <h3 class="second-main cl-white mr-30">BEST USER EXPERINCE</h3>
+                <p class="white-p">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="app-features-wrap">
+                <div class="features-right">
+                    <div class="features-apps-r">
+                        <img src="img/gift.svg" alt="" class="features-pictures" width="47" height="43">
+                        <h3 class="second-main cl-white mr-30">UNLIMITER FEATURES</h3>
+                        <p class="white-p">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
                     </div>
-                    <div class="features-apps">
-                        <img class="img-features-apps" src="img/dowload_app.png" alt="">
-                    </div>
-                    <div class="features-left">
-                        <div class="features-apps-l">
-                            <img src="img/phone.svg" alt="" class="features-pictures" width="47" height="43">
-                            <h3 class="second-main cl-white mr-30">IOS & ANDROIND VERSION</h3>
-                            <p class="white-p">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </p>
-                        </div>
-                        <div class="features-apps-l">
-                            <img src="img/eye.svg" alt="" class="features-pictures" width="47" height="43">
-                            <h3 class="second-main cl-white mr-30">RETINA READY GREAPHICS</h3>
-                            <p class="white-p">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </p> 
-                        </div>
+                    <div class="features-apps-r">
+                        <img src="img/pen.svg" alt="" class="features-pictures" width="47" height="43">
+                        <h3 class="second-main cl-white mr-30">AWSOME UI DESIGN</h3>
+                        <p class="white-p">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
                     </div>
                 </div>
-                <div class="features-apps1">
-                    <img src="img/Group.svg" alt="" class="features-pictures" width="47" height="43">
-                    <h3 class="second-main cl-white mr-30">24/7 support by real pepole</h3>
-                    <p class="white-p">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
+                <div class="features-apps">
+                    <img class="img-features-apps" src="img/dowload_app.png" alt="">
                 </div>
-            </section>
+                <div class="features-left">
+                    <div class="features-apps-l">
+                        <img src="img/phone.svg" alt="" class="features-pictures" width="47" height="43">
+                        <h3 class="second-main cl-white mr-30">IOS & ANDROIND VERSION</h3>
+                        <p class="white-p">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="features-apps-l">
+                        <img src="img/eye.svg" alt="" class="features-pictures" width="47" height="43">
+                        <h3 class="second-main cl-white mr-30">RETINA READY GREAPHICS</h3>
+                        <p class="white-p">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p> 
+                    </div>
+                </div>
+            </div>
+            <div class="features-apps1">
+                <img src="img/Group.svg" alt="" class="features-pictures" width="47" height="43">
+                <h3 class="second-main cl-white mr-30">24/7 support by real pepole</h3>
+                <p class="white-p">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+            </div>
+        
+        </section>
 
-            <section class="download" id="part4">
-                <div class="container">
-                    <div class="down-div">
-                        <div class="down-div2">
-                            <h2 class="main-header-black">DOWNLOAD APP NOW</h2>
-                            <P class="down-p">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus harum natus et cumque distinctio id consectetur qui eligendi
-                            </P>
-                            <a href="">
-                                <img src="img/PngItem_1144050_2.svg" alt="">
-                            </a>
-                            <a href="">
-                                <img src="img/toppng_1.svg" alt="">
-                            </a>
-                            <ul class="ul">
-                                <li class="list2">
-                                    <img class="icon-down" src="img/down.svg" alt="">
-                                    <h4 class="h4">59865</h4>
-                                    <p class="white-p-down">Download</p>
-                                </li>
-                                <li class="list2">
-                                    <img class="icon-down" src="img/like.svg" alt="">
-                                    <h4 class="h4">29852</h4>
-                                    <p class="white-p-down">Like</p>
-                                </li>
-                                <li class="list2">
-                                    <img class="icon-down" src="img/star.svg" alt="">
-                                    <h4 class="h4">1500</h4>
-                                    <p class="white-p-down">5 star rating</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <img class="img-download" src="img/Gravity-Scene-iPhone-12-Mockup_1.png" alt="">
+        <section class="download" id="part4">
+            <div class="container">
+                <div class="down-div">
+                    <div class="down-div2">
+                        <h2 class="main-header-black">DOWNLOAD APP NOW</h2>
+                        <p class="download__paragraph--description-text gray-paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.                        </p>
+                        <p class="download__paragraph--description-text-tablet gray-paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+                        </p>
+                        <p class="download__paragraph--description-text-pc gray-paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+                        </p>
+                        <a href="">
+                            <img src="img/PngItem_1144050_2.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/toppng_1.svg" alt="">
+                        </a>
+                        <ul class="ul">
+                            <li class="list2">
+                                <img class="icon-down" src="img/down.svg" alt="">
+                                <h4 class="h4">59865</h4>
+                                <p class="white-p-down">Download</p>
+                            </li>
+                            <li class="list2">
+                                <img class="icon-down" src="img/like.svg" alt="">
+                                <h4 class="h4">29852</h4>
+                                <p class="white-p-down">Like</p>
+                            </li>
+                            <li class="list2">
+                                <img class="icon-down" src="img/star.svg" alt="">
+                                <h4 class="h4">1500</h4>
+                                <p class="white-p-down">5 star rating</p>
+                            </li>
+                        </ul>
                     </div>
+                    <img class="img-download" src="img/Gravity-Scene-iPhone-12-Mockup_1.png" alt="">
                 </div>
-            </section>
+            </div>
+        </section>
 
             
             <section class="how_to_use_app_section" >

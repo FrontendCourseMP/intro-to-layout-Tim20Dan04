@@ -60,6 +60,26 @@ body {
     width: 100%;
 }
 
+.navbar__upnav span:hover {
+    transition-duration: 0.4s;
+    transform: scale(1.2);
+}
+
+.navbar__upnav span:active {
+    transition-duration: 0.2s;
+    transform: scale(0.8);
+}
+
+.upnav__social-list img:hover {
+    transition-duration: 0.4s;
+    transform: scale(1.4);
+}
+
+.upnav__social-list img:active {
+    transition-duration: 0.2s;
+    transform: scale(0.6);
+}
+
 .upnav__mail {
     display: flex;
     text-decoration: none;
@@ -148,10 +168,10 @@ body {
 }
 
 
+
 .header-nav {
 	margin: 40px 0px 108px 0px;
 	width: 90%;
-	
 	height: 40px;
 	display: flex;
 	flex-direction: row;
@@ -162,6 +182,53 @@ body {
     max-width: 1440px;
 }
 
+.header-nav li {
+    display: inline-block;
+}
+
+.header-nav a:hover {
+    transition-duration: 0.4s;
+    color: var(--Royal-blue);
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+
+.header-nav a:active {
+    transition-duration: 0.2s;
+    color: var(--Royal-blue);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-nav a.nav-menu-blue:hover {
+    transition-duration: 0.4s;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.header-nav a.nav-menu-blue:active {
+    transition-duration: 0.4s;
+    text-decoration: underline;
+    transform: scale(0.8);
+}
+
+.header-nav img:hover {
+    transition-duration: 0.4s;
+    
+    transform: scale(1.2);
+}
+
+.header-nav img:active {
+    transition-duration: 0.4s;
+    
+    transform: scale(0.8);
+}
+
+
+.down:hover {
+    background-color: var(--White);
+}
 
 .logo {
 	width: 79px;
@@ -298,6 +365,11 @@ body {
     height: 100%;
     background-color: white;
     margin-bottom: 60px;
+}
+
+.hero-card-images img:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
 }
 
 
@@ -496,16 +568,28 @@ body {
 	margin: 20px 20px 20px 20px;
 }
 
-.p-2 {
-	width: 100%;
-    height: 66px;
-	
-	color: var(--gray-paragraph);
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 24px; /* 150% */
+.about__paragraph--description-text {
+    
+    max-width: 95%;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.about__paragraph--description-text-pc {
+    display: none;
+}
+
+@media (min-width: 1439px) {
+    .about__paragraph--description-text {
+        display: none;
+    }
+
+    .about__paragraph--description-text-pc {
+        display: block;
+        max-width: 95%;
+        text-align: left;
+        margin-bottom: 40px;
+    }
 }
 
 .second-main {
@@ -524,8 +608,7 @@ body {
 .grid {
 	display: grid;
 	width: 100%;
-	grid-template-columns: 1fr 6fr;
-	grid-template-rows: 1fr 1.5fr;
+	
 	
 }
 
@@ -589,9 +672,56 @@ body {
 	padding-top: 103px;
 }
 
+.download__paragraph--description-text {
+    margin: 0 0;
+    max-width: 300px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.download__paragraph--description-text-tablet {
+    display: none;
+}
+
+.download__paragraph--description-text-pc {
+    display: none;
+}
+
+@media (min-width: 767px) {
+    .download__paragraph--description-text {
+        display: none;
+    }
+
+    .download__paragraph--description-text-tablet {
+        display: block;
+        margin: 0 0;
+        max-width: 95%;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .download__paragraph--description-text-pc {
+        display: none;
+    }
+
+}
 
 
+@media (min-width: 1439px) {
+    .download__paragraph--description-text {
+        display: none;
+    }
 
+    .download__paragraph--description-text-tablet {
+        display: none;
+    }
+    .download__paragraph--description-text-pc {
+        display: block;
+        margin: 0 0;
+        max-width: 95%;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+}
 
 .down-div {
 	display: flex;
@@ -605,6 +735,12 @@ body {
 .down-div2 {
 	max-width: 330px;
 }
+
+.down-div2 a img:hover {
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
 
 
 .img-download {
@@ -651,6 +787,17 @@ body {
 	text-align: center;
 	
 	list-style-type: none;
+}
+
+.list2:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+
+.list2:active {
+    transition: 0.2s;
+    transform: scale(0.8);
 }
 
 
@@ -1399,6 +1546,7 @@ video {
     padding-top: 60px;
 }
 
+
 .our_recent_blog_section__main-text {
     width: fit-content;
     margin: 0 auto;
@@ -1722,6 +1870,12 @@ video {
 .main_footer__footer-description .footer-description__paragraph--description-text {
     margin: 0;
     margin-bottom: 40px;
+}
+
+
+.main_footer__footer-description a:hover {
+    transition: 0.2s;
+    transform: scale(1.4);
 }
 
 .footer-description__social-list {

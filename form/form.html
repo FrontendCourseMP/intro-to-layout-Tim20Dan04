@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Andronov Denis's work</title>
+    <style>
+        main{
+            padding-top: 200px;
+            margin-bottom: 120px;
+        }
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        legend {
+            font-size: large;
+        }
+
+        label {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main_header">
+        <div class="navbar__container container">
+            <div class="navbar__upnav">
+                <div class="upnav__block--telandmail">
+                    <a href="mailto:info@youremail.com" class="upnav__mail">
+                        <img src="pictures/mail-fill.svg" alt="" class="upnav__mail--img">
+                        <p class="upnav__mail--text p_16-24">info@youremail.com</p>
+                    </a>
+                    <a href="tel:8803216559985" class="upnav__phone">
+                        <img src="pictures/phone-fill.svg" alt="" class="upnav__phone--img">
+                        <p class="upnav__phone--text p_16-24">(480) 555-0103</p>
+                    </a>
+                </div>
+                <ul class="upnav__social-list">
+                    <li class="upnav__social-list--item">
+                        <a href="#">
+                            <img src="pictures/facebook-fill-white.svg" alt="facebook icon"
+                                class="upnav__item--facebook">
+                        </a>
+                    </li>
+                    <li class="upnav__social-list--item">
+                        <a href="">
+                            <img src="pictures/instagram-fill.svg" alt="instagram icon" class="upnav__item--instagram">
+                        </a>
+                    </li>
+                    <li class="upnav__social-list--item">
+                        <a href="">
+                            <img src="pictures/twitter-fill.svg" alt="twitter icon">
+                        </a>
+                    </li>
+                    <li class="upnav__social-list--item">
+                        <a href="">
+                            <img src="pictures/youtube-fill.svg" alt="youtube icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="header_navbar">
+                <a href="#" class="navbar_menu">
+                    <img src="pictures/menu-line.svg" alt="navbar">
+                </a>
+                <ul class="header__navbar--left-elements">
+                    <li class="navbar__left-elements--item">
+                        <a href="" class="left-elements__item--home">
+                            home
+                        </a>
+                    </li>
+                    <li class="navbar__left-elements--item">
+                        <a href="" class="left-elements__item--about">
+                            about
+                        </a>
+                    </li>
+                    <li class="navbar__left-elements--item">
+                        <a href="" class="left-elements__item--features">  
+                            features
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="navbar_logo">
+                    <img src="pictures/logo.png" alt="LOGO" class="navbar__menu--logo-picture-1">
+                    <img src="pictures/Logo2.png" alt="LOGO" class="navbar__menu--logo-picture-2">
+                </a>
+                <ul class="header__navbar--right-elements">
+                    <li class="navbar__right-elements--item">
+                        <a href="" class="right-elements__item--screenshot">
+                            screenshot
+                        </a>
+                    </li>
+                    <li class="navbar__right-elements--item">
+                        <a href="" class="right-elements__item--blog">
+                            blog
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="button_p">
+                    DOWNLOAD
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        
+        <div class="container">
+            <form action="//httpbin.org/post" method="POST">
+
+                    <fieldset class="field-one">
+                        <legend>Личная информация</legend>
+                        <label class="form-name">
+                            Ваше имя (обязательно):
+                            <input type="text" name="name" placeholder="Андронов Денис" required>
+                        </label>
+    
+                        <label class="form-birthday">
+                            Дата рождения (обязательно): 
+                            <input type="date" name="date" required>
+                        </label>
+    
+                        <label class="form-pol">
+                            Мужской:
+                            <input type="radio" name="male-female" value="male">
+                        </label>
+                        <label>
+                            Женский:
+                            <input type="radio" name="male-female" value="female">
+                        </label>
+                        <label class="form-password">
+                            Пароль (Обязательно):
+                            <input type="password" name="password" placeholder="********" required>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="field-two">
+                        <legend>Контактные данные</legend>
+                        
+                        <label class="form-email">
+                            Электронная почта(Обязательно):
+                            <input type="email" name="email" placeholder="example@example.com">
+                        </label>
+
+                        <label class="form-phone">
+                            Телефон (Обязательно):
+                            <input type="tel" name="tel" placeholder="+ 7 (999) 999 99-99">
+                        </label>
+
+                        <label class="form-contact">
+                            Утро
+                            <input type="checkbox" name="morning">
+                        </label>
+                        <label>
+                            День
+                            <input type="checkbox" name="day">
+                        </label>
+                        <label>
+                            Вечер
+                            <input type="checkbox" name="evening">
+                        </label>
+
+                    </fieldset>
+                    
+                    <div class="buttons">
+                        <button type="submit">Отправить</button>
+                        <button type="reset">Сбросить</button>
+                    </div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="main_footer">
+        <div class="main_footer__container container">
+            <div class="main_footer__flex-wrapper">
+                <div class="main_footer__footer-description">
+                    <h2 class="footer-description__paragraph--hero-text white-paragraph h_31-47">LOGO</h2>
+                    <p class="footer-description__paragraph--description-text white-paragraph p_16-24">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est
+                        tellus vitae,
+                        nullam lobortis enim.
+                    </p>
+                    <p class="footer-description__paragraph--description-text-pc white-paragraph p_16-24">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+                    </p>
+                    <p class="footer-description__paragraph--description-text-tablet white-paragraph p_16-24">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+                    </p>
+                    <ul class="footer-description__social-list">
+                        <li class="social-list__item--facebook item">
+                            <a href=""><img src="pictures/facebook-fill.svg" alt="facebook icon"></a>
+                        </li>
+                        <li class="social-list__item--instagram item">
+                            <a href=""><img src="pictures/instagram-fill.svg" alt="instagram icon"></a>
+                        </li>
+                        <li class="social-list__item--twitter item">
+                            <a href=""><img src="pictures/twitter-fill.svg" alt="twitter icon"></a>
+                        </li>
+                        <li class="social-list__item--youtube item">
+                            <a href=""><img src="pictures/youtube-fill.svg" alt="youtube icon"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_footer__footer_links">
+                    <h2 class="footer_links__paragraph--hero-text white-paragraph h_25-37">QUICK LINK</h2>
+                    <ul class="footer_links__links-list">
+                        <li class="links-list__item--about item">
+                            <a href="#" class="white-paragraph p_16-24">About</a>
+                        </li>
+                        <li class="links-list__item--features item">
+                            <a href="#" class="white-paragraph p_16-24">Features</a>
+                        </li>
+                        <li class="links-list__item--screenshot item"><a href="#"
+                                class="white-paragraph p_16-24">Screenshot</a>
+                        </li>
+                        <li class="links-list__item--blog item">
+                            <a href="#" class="white-paragraph p_16-24">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_footer__footer_news">
+                    <h2 class="footer_news__paragraph--hero-text white-paragraph h_25-37">NEWS LETTER</h2>
+                    <p class="footer_news__paragraph--description-text white-paragraph p_16-24">Subscribe our newsletter
+                        to get our latest update & news</p>
+                    <form class="footer_news__form" action="" method="get">
+                        <span class="form__text">enter your email</span>
+                        <input class="form__input--email" type="email" placeholder="Your email adress">
+                        <button class="form__input--email-button" type="submit"><img
+                                src="pictures/send-plane-2-fill.svg" alt=""></button>
+                    </form>
+                </div>
+            </div>
+            <div class="main_footer__border-copyright"></div>
+            <div class="main_footer__copyright">
+                <p class="copyright__icon--copy white-paragraph p_12">
+                    &copy;
+                </p>
+                <p class="copyright__paragraph--text white-paragraph p_12">
+                    Copyright 2021. Ojiomedia. All Right Reseved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
