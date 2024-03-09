@@ -2,8 +2,8 @@
 
 
 html {
-    scroll-behavior: smooth;
-  }
+    scroll-behavior:smooth;
+}
   
 
 /* josefin-sans-regular - latin */
@@ -86,7 +86,7 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1170px;
     padding: 0 20px;
 }
 
@@ -101,7 +101,6 @@ body {
 }
 
 .navbar__upnav span:hover {
-    transition-duration: 0.4s;
     transform: scale(1.2);
 }
 
@@ -110,8 +109,13 @@ body {
     transform: scale(0.8);
 }
 
+
+.upnav__social-list img {
+    transition: transform 0.4s ease;
+}
+
+
 .upnav__social-list img:hover {
-    transition-duration: 0.4s;
     transform: scale(1.4);
 }
 
@@ -134,10 +138,13 @@ body {
 }
 
 .upnav__mail--text {
+    transition: transform 0.4s ease;
     color: var(--White);
+    min-width: 109px;
 }
 
 .upnav__phone--text {
+    transition: transform 0.4s ease;
     color: var(--White);
     min-width: 109px;
 }
@@ -234,7 +241,6 @@ body {
     transition-duration: 0.4s;
     color: var(--Royal-blue);
     text-decoration: underline;
-    font-size: 22px;
 }
 
 
@@ -257,11 +263,6 @@ body {
     transform: scale(0.8);
 }
 
-.header-nav img:hover {
-    transition-duration: 0.4s;
-    
-    transform: scale(1.2);
-}
 
 .header-nav img:active {
     transition-duration: 0.4s;
@@ -343,7 +344,7 @@ nav {
 
 
 @media (min-width: 1439px) {
-    .burger-menu-button {
+    .header-nav li:first-child {
         display: none;
     }
 }
@@ -789,8 +790,13 @@ nav {
 	max-width: 330px;
 }
 
+
 .down-div2 a img:hover {
-    transition: 0.2s;
+    transition: transform 0.4s ease-in-out;
+}
+
+.down-div2 a img:hover {
+
     transform: scale(1.2);
 }
 
@@ -842,8 +848,12 @@ nav {
 	list-style-type: none;
 }
 
+
+.list2 {
+    transition: transform 0.4s ease-in-out;
+}
+
 .list2:hover {
-    transition: 0.2s;
     transform: scale(1.1);
 }
 
@@ -1995,6 +2005,12 @@ video {
     text-decoration: none;
 }
 
+.footer_links__links-list .item a:hover {
+    color: var(--Black);
+    background-color: var(--White);
+    text-decoration: underline;
+}
+
 .footer_news__paragraph--hero-text {
     margin: 0;
     margin-bottom: 11px;
@@ -2173,6 +2189,7 @@ video {
         margin: 0;  
     }
 }
+
 
 @media (min-width: 1440px) {
     .main_footer__footer-description {
