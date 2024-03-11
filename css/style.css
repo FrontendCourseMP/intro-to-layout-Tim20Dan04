@@ -1757,6 +1757,7 @@ video {
     }
     
     .item__2021--main-text-2 {
+        text-transform: uppercase;
         display: block;
     }
 
@@ -1911,7 +1912,7 @@ video {
 
     .mail_and_number p {
         font-weight: 600;
-        font-size: 2.5rem;
+        
         line-height: 3.75rem; 
     }
 
@@ -2094,10 +2095,6 @@ video {
     padding-right: 0;
 }
 
-.main_footer__footer_news {
-    border-bottom: 1px solid var(--White);
-}
-
 @media (min-width: 768px) {
     .main_footer__footer-description {
         width: 213px;
@@ -2215,8 +2212,8 @@ video {
     }
 
     .footer-description__paragraph--hero-text {
-        font-weight: 700;
-        font-size: 3.125rem;
+        font-weight: 600;
+        font-size: 32px;
         line-height: 4.725rem;
     }
 
@@ -2245,7 +2242,7 @@ video {
 
     .footer_links__paragraph--hero-text {
         font-weight: 600;
-        font-size: 2.5rem;
+        
         line-height: 3.75rem; 
         margin-bottom: 13px;  
         width: 250px;
@@ -2253,7 +2250,7 @@ video {
 
     .footer_news__paragraph--hero-text {
         font-weight: 600;
-        font-size: 2.5rem;
+        
         line-height: 3.75rem;
     }
 
@@ -2306,7 +2303,6 @@ video {
 
     .main_footer__copyright p{
         font-weight: 400;
-        font-size: 1.6rem;
         line-height: 2.4rem;
     }
 }

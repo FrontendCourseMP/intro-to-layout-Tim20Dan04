@@ -1922,7 +1922,6 @@ video {
 
 @media (min-width: 768px) {
     .main_footer {
-        /* margin-top: -75px; */
         padding: 0;
         padding-top: 135px;
     }
@@ -1930,7 +1929,6 @@ video {
 
 @media (min-width: 1440px) {
     .main_footer {  
-        /* margin-top: -110px;  */
         padding-top: 235px;       
     }
 }
@@ -2121,14 +2119,13 @@ video {
 
     .footer_links__paragraph--hero-text {
         font-weight: 600;
-        font-size: 2rem;
         line-height: 3rem; 
         margin-bottom: 13px;   
     }
 
     .footer_news__paragraph--hero-text {
         font-weight: 600;
-        font-size: 2rem;
+        font-size: 32px;
         line-height: 3rem;
     }
 
@@ -2229,15 +2226,14 @@ video {
 
     .footer_links__paragraph--hero-text {
         font-weight: 600;
-        font-size: 2.5rem;
-        line-height: 3.75rem; 
+        line-height: 3.75rem;
+        font-size: 32px;
         margin-bottom: 13px;  
         width: 250px;
     }
 
     .footer_news__paragraph--hero-text {
         font-weight: 600;
-        font-size: 2.5rem;
         line-height: 3.75rem;
     }
 
@@ -2290,7 +2286,6 @@ video {
 
     .main_footer__copyright p{
         font-weight: 400;
-        font-size: 1.6rem;
         line-height: 2.4rem;
     }
 }
@@ -2336,7 +2331,7 @@ label {
 }
 
 
-form {
+.form {
     background-color: var(--White);
     border-radius: 10px;
     padding: 20px;
@@ -2350,4 +2345,43 @@ input[required]:invalid {
 
 input[required]:valid {
     border: 1px solid black;
+}
+
+
+
+dd {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+    text-decoration: line-through;
+}
+
+dl dt:nth-child(odd),
+dl dd:nth-child(even) {
+    color: var(--gray-paragraph);
+}
+
+dl dt:nth-child(even), dl dd:nth-child(odd) {
+        color: var(--Royal-blue); 
+    }
+
+.flex-div {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+
+.pseclass {
+    font-size: larger;
+    text-align: center;
+}
+
+
+.footer-logo {
+    background-color: white;
+    transform: scale(1.5) rotate(-30deg) skew(130deg, 200deg);
 }
