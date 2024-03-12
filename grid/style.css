@@ -2446,12 +2446,15 @@ video {
 
 .buts {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    justify-content: center;
+    gap: 10px;
     grid-template-areas: 
-            "but1 but2 but3"
-            "but4 but5 but6"
-            "but7 but8 but9"
-            ;
-            gap: 10px;
+        "but1 but2 but3"
+        "but4 but5 but6"
+        "but7 but8 but9"
+        ;
+            
 }
 
 .buts a {
