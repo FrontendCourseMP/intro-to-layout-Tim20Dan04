@@ -2303,9 +2303,9 @@ video {
 
 .section-three{
     margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
 }
 
 
@@ -2325,58 +2325,58 @@ video {
 }
 
 
-.box-1 {
+.box:first-child {
     grid-area: w1;
     background-color: white;
     border-right: 10px solid black;
     border-bottom: 10px solid black;
 }
 
-.box-2 {
+.box:nth-child(2) {
     grid-area: y1;
     background-color: yellow;
     border-bottom: 10px solid black;
 }
 
-.box-3 {
+.box:nth-child(3) {
     grid-area: r1;
     background-color: red;
     border-right: 10px solid black;
     border-bottom: 10px solid black;
 }
 
-.box-4 {
+.box:nth-child(4) {
     grid-area: y2;
     background-color: yellow;
     border-bottom: 10px solid black;
 }
 
-.box-5 {
+.box:nth-child(5) {
     grid-area: w2;
     background-color: #fff;
     border-right: 10px solid black;
     border-bottom: 10px solid black;
 }
 
-.box-6 {
+.box:nth-child(6) {
     grid-area: w3;
     background: white;
     border-bottom: 10px solid black;
 }
 
-.box-7 {
+.box:nth-child(7) {
     grid-area: b1;
     background-color: black;
     border-right: 10px solid black;
 }
 
-.box-8 {
+.box:nth-child(8) {
     grid-area: w4;
     background-color: white;
     border-right: 10px solid black;
 }
 
-.box-9 {
+.box:last-child {
     grid-area: w5;
     background-color: white;
 
@@ -2384,32 +2384,35 @@ video {
 
 
 .graphics {
-    margin-top: 50px;
+    
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows: 333px 333px 333px;
+    grid-template-columns: 100px 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-        "board s1 s1 s1"
-        "board s2 s3 s4"
-        "board s5 s5 s6"
+        "board s1 s1 s1 s1 s1 s1"
+        "board s2 s2 s3 s3 s4 s4"
+        "board s5 s5 s5 s6 s6 s6"
         ;
-    gap: 10px;
+    gap: 30px;
+    margin-top: 50px;
 }
 
 
 .graphics img {
     width: 100%;
-    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 
 .links {
     grid-area: board;
-    background-color: red;
+    background-color: var(--Royal-blue);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border-radius: 10px;
 }
 
 .links a{
@@ -2437,31 +2440,46 @@ video {
 
 .graph-5 {
     grid-area: s5;
+    
 }
 
 .graph-6 {
     grid-area: s6;
+    transform: scale(-1, 1)
 }
 
+
+
+.container-RAM {
+    margin: 0 auto;
+    width: 40%;
+    max-width: 800px;
+    padding: 0 20px;
+}
 
 .buts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
-    justify-content: center;
-    gap: 10px;
-    grid-template-areas: 
-        "but1 but2 but3"
-        "but4 but5 but6"
-        "but7 but8 but9"
-        ;
-            
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    grid-gap: 10px;           
 }
 
 .buts a {
-    color: var(--gray-paragraph);
+    color: var(--black);
     text-decoration: none;
     background-color: var(--White);
+    padding: 5px 10px;
+    border-radius: 10px;
 }
+
+
+.buts a:hover {
+    color: var(--White);
+    text-decoration: none;
+    background-color: var(--Black);
+    text-decoration: underline;
+}
+
 
 .buts div {
     display: flex;
@@ -2470,40 +2488,5 @@ video {
     background-color: var(--Royal-blue);
     width: 100px;
     height: 100px;
-}
-
-.but_1 {
-    grid-area: but1
-}
-
-.but_2 {
-    grid-area: but2
-}
-
-.but_3 {
-    grid-area: but3
-}
-
-.but_4 {
-    grid-area: but4
-}
-
-.but_5 {
-    grid-area: but5
-}
-
-.but_6 {
-    grid-area: but6
-}
-
-.but_7 {
-    grid-area: but7
-}
-
-.but_8 {
-    grid-area: but8
-}
-
-.but_9 {
-    grid-area: but9
+    border-radius: 5px;
 }
