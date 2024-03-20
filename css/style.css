@@ -59,9 +59,20 @@ html:root {
     color: var(--White);
 }
 
+.white-paragraph::selection {
+    background: var(--White);
+    color: var(--gray-paragraph);
+}
+
 .black-paragraph {
     color: var(--Black);
 }
+
+.black-paragraph::selection {
+    color: var(--White);
+    background: var(--Royal-blue);
+}
+
 
 body {
 	font-family: Josefin Sans, sans-serif;
@@ -497,6 +508,12 @@ nav {
 	text-transform: uppercase;
 }
 
+.second-main-header::selection {
+    color: var(--White);
+    background: var(--Royal-blue);
+}
+
+
 .hero-card-images{
 	width: 228px;
 	height: 40px;
@@ -573,6 +590,13 @@ nav {
 	margin-bottom: 18px;
 
 }
+
+
+.main-header-black::selection {
+    color: var(--White);
+    background: var(--Royal-blue);
+}
+
 
 @media (min-width: 767px) {
 	.main-header-black {
@@ -656,6 +680,12 @@ nav {
 	text-transform: uppercase;
 }
 
+.second-main::selection {
+    color: var(--White);
+    background: var(--Royal-blue);
+}
+
+
 .grid {
 	display: grid;
 	width: 100%;
@@ -708,6 +738,13 @@ nav {
 	font-weight: 600;
 	margin-top: 60px;
 }
+
+.main-header-white::selection {
+    background: var(--White);
+    color: var(--gray-paragraph);
+}
+
+
 
 @media (min-width: 767px) {
 	.main-header-white {
@@ -951,6 +988,12 @@ nav {
 	line-height: 24px;
 	word-wrap: break-word
 }
+
+.white-p::selection {
+    background: var(--White);
+    color: var(--gray-paragraph);
+}
+
 
 
 .cl-white{
