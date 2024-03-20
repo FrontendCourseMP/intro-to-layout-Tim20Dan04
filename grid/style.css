@@ -48,7 +48,6 @@ body {
     margin: 0;
     padding: 0;
 }
-  
 
 html:root {
     --Royal-blue: #5956E9;
@@ -56,6 +55,12 @@ html:root {
     --Black: #232233;
     --White: #FFF;
 }
+  
+::selection {
+    color: gold;
+    background: red;
+  }
+
 
 .purple-paragraph {
     color: var(--Royal-blue);
